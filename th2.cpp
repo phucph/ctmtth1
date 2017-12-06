@@ -7,7 +7,7 @@ class SingleList
 	public:
 		SingleList() 
 		{
-			head=null;
+			head=NULL;
 		}
 		bool empty()
 		{
@@ -74,6 +74,7 @@ class SingleList
 					}
 					else
 					popFront();
+					break;
 				}
 				else
 				p0=p;//p0 giu lai dia tri nut hien tai
@@ -86,7 +87,7 @@ class SingleList
 			while (!empty())
 			popFront();
 		}
-};
+
 		
 	private :
 	{
@@ -102,6 +103,8 @@ class SingleList
 		Node*head;
 		int size;
 	};
+}
+
 main()
 {
 	SingleList<int> list;
@@ -113,6 +116,5 @@ main()
 						list.pushFront('A');
 	list.Print();
 	list.popFront();
-	...
 }
 
