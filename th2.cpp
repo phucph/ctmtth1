@@ -105,5 +105,14 @@ class SingleList
 main()
 {
 	SingleList<int> list;
+	list.pushFront('F');
+		list.pushFront('E');
+			list.pushFront('D');
+				list.pushFront('C');
+					list.pushFront('B');
+						list.pushFront('A');
+	list.Print();
+	list.popFront();
+	...
 }
 
